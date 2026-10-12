@@ -47,17 +47,20 @@
             background-color: #3E97FF;
             border: none;
         }
+
     </style>
 </head>
+
 <body>
+    
 
     <div class="thankyou-container">
-        <h2>Terima Kasih, {{$nama}} 🎉</h2>
+        <h2>Terima Kasih, {{session('nama')}} 🎉</h2>
         <p class="lead">Pertanyaan Anda telah berhasil dikirim.</p>
 
         <blockquote>
             <strong>Pertanyaan Anda:</strong><br>
-            "{{$pertanyaan}}"
+            "{{session('pertanyaan')}}"
         </blockquote>
 
         <p class="email-info mt-4">
